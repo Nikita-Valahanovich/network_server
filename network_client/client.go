@@ -16,6 +16,8 @@ func main() {
 	// закрываем ресурс
 	defer conn.Close()
 
+	// Добавляем входящее сообщение в буфер
 	reader := bufio.NewReader(conn)
+	// Читаем сообщение из буфера
 	fmt.Println(reader)
 }
